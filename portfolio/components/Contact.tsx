@@ -93,6 +93,7 @@ export default function Contact() {
               </p>
 
               <div className="space-y-6">
+                {/* Email - Commented out for later use
                 <a
                   href="mailto:sharminsirajudeen11@gmail.com"
                   className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
@@ -105,6 +106,7 @@ export default function Contact() {
                     <div className="font-medium">sharminsirajudeen11@gmail.com</div>
                   </div>
                 </a>
+                */}
 
                 {/* Schedule a Call - Commented out for later use
                 <a
