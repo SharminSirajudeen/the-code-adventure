@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -14,29 +15,35 @@ export default function Hero() {
       <div className="container-custom relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 bg-gold/20 backdrop-blur-sm border border-gold/30 rounded-full px-6 py-2 mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, type: 'spring' }}
+            className="mb-12"
           >
-            <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-gold font-medium text-sm">Full-Stack Development</span>
+            <div className="relative w-64 h-64 mx-auto">
+              <Image
+                src="/logo.png"
+                alt="Code Foundry"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="heading-xl text-white mb-6"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="heading-xl text-white mb-4"
           >
-            Engineering Scalable
-            <span className="block text-gold">Software Systems</span>
+            Binary Born. <span className="text-gold">Human Designed.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="body-lg text-white/90 mb-8 max-w-3xl mx-auto"
           >
             Full-stack development with production-grade architecture, optimized performance,
