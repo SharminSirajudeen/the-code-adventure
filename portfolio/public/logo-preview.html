@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Foundry - Logo Selection</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1f3a 0%, #2d3748 100%);
+      color: white;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #FF6B35;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #a0aec0;
+      margin-bottom: 50px;
+      font-size: 1.1rem;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .logo-card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .logo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 80px rgba(255, 107, 53, 0.3);
+    }
+
+    .logo-title {
+      color: #2d3748;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .logo-preview {
+      background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+      border-radius: 12px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .logo-preview img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .logo-features {
+      color: #4a5568;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .logo-features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .logo-features li {
+      padding: 5px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .logo-features li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #FF6B35;
+      font-weight: bold;
+    }
+
+    .dark-preview {
+      background: linear-gradient(135deg, #1a1f3a 0%, #2d3748 100%);
+      margin-top: 60px;
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    .dark-preview h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #FF6B35;
+    }
+
+    .dark-logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 20px;
+    }
+
+    .dark-logo-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid rgba(255, 107, 53, 0.2);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .dark-logo-card img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .dark-logo-card h3 {
+      margin-top: 15px;
+      color: #a0aec0;
+      font-size: 0.9rem;
+    }
+
+    .instructions {
+      background: rgba(255, 107, 53, 0.1);
+      border-left: 4px solid #FF6B35;
+      padding: 20px 30px;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    .instructions h3 {
+      color: #FF6B35;
+      margin-bottom: 10px;
+    }
+
+    .instructions p {
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Code Foundry Logo Selection</h1>
+    <p class="subtitle">Choose your preferred logo design</p>
+
+    <div class="logo-grid">
+      <!-- Original Logo -->
+      <div class="logo-card">
+        <h2 class="logo-title">Current Logo</h2>
+        <div class="logo-preview">
+          <img src="/logo.svg" alt="Current Logo" style="max-width: 280px;">
+        </div>
+        <div class="logo-features">
+          <ul>
+            <li>Simple hammer + C design</li>
+            <li>Clean and recognizable</li>
+            <li>Works well at small sizes</li>
+            <li>Transparent background</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modern Geometric -->
+      <div class="logo-card">
+        <h2 class="logo-title">Modern Geometric</h2>
+        <div class="logo-preview">
+          <img src="/images/logo-modern-geometric.svg" alt="Modern Geometric" style="max-width: 280px;">
+        </div>
+        <div class="logo-features">
+          <ul>
+            <li>Angular, tech-focused design</li>
+            <li>Hexagonal frame (like code blocks)</li>
+            <li>Geometric C shape with gradient</li>
+            <li>Binary code accent dots</li>
+            <li>Professional & modern aesthetic</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Icon + Text -->
+      <div class="logo-card">
+        <h2 class="logo-title">Icon + Text</h2>
+        <div class="logo-preview">
+          <img src="/images/logo-icon-text.svg" alt="Icon + Text" style="max-width: 100%;">
+        </div>
+        <div class="logo-features">
+          <ul>
+            <li>Full branding with text</li>
+            <li>Includes tagline below</li>
+            <li>Great for headers and hero sections</li>
+            <li>Bold typography with separator line</li>
+            <li>Professional corporate look</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dark Background Preview -->
+    <div class="dark-preview">
+      <h2>Preview on Dark Background (Like Your Hero Section)</h2>
+      <div class="dark-logo-grid">
+        <div class="dark-logo-card">
+          <img src="/logo.svg" alt="Current on dark">
+          <h3>Current Logo</h3>
+        </div>
+        <div class="dark-logo-card">
+          <img src="/images/logo-modern-geometric.svg" alt="Geometric on dark">
+          <h3>Modern Geometric</h3>
+        </div>
+        <div class="dark-logo-card">
+          <img src="/images/logo-icon-text.svg" alt="Text on dark" style="max-width: 100%;">
+          <h3>Icon + Text</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>📋 How to Choose</h3>
+      <p>
+        <strong>Current Logo:</strong> Best for minimalist, icon-only usage<br>
+        <strong>Modern Geometric:</strong> Best for a tech-forward, professional brand identity<br>
+        <strong>Icon + Text:</strong> Best for hero sections, headers, and full branding needs
+      </p>
+      <p style="margin-top: 15px;">
+        Once you've selected your favorite, let me know and I'll update the portfolio to use it!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
