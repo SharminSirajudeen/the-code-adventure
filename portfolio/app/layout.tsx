@@ -9,12 +9,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Stack Engineering | Full-Stack Software Engineer',
-  description: 'Production-grade web and mobile applications. Scalable architecture, optimized performance, clean codebases. React, TypeScript, Swift, Kotlin.',
-  keywords: ['full-stack engineer', 'software architecture', 'Next.js', 'React', 'TypeScript', 'SwiftUI', 'Jetpack Compose', 'API development'],
+  title: 'Code Foundry | Full-Stack Software Engineering',
+  description: 'Forging production-grade web and mobile applications. Scalable architecture, optimized performance, clean codebases. React, TypeScript, Swift, Kotlin.',
+  keywords: ['full-stack engineer', 'software architecture', 'Next.js', 'React', 'TypeScript', 'SwiftUI', 'Jetpack Compose', 'API development', 'Code Foundry'],
   openGraph: {
-    title: 'Stack Engineering | Full-Stack Software Engineer',
-    description: 'Production-grade software systems with scalable architecture and optimized performance.',
+    title: 'Code Foundry | Full-Stack Software Engineering',
+    description: 'Forging production-grade software systems with scalable architecture and optimized performance.',
     type: 'website',
   },
 }
