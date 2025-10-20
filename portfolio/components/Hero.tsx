@@ -22,10 +22,10 @@ export default function Hero() {
           >
             <div className="relative w-64 h-64 mx-auto">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Code Foundry"
                 fill
-                className="object-contain"
+                className="object-contain drop-shadow-2xl"
                 priority
               />
             </div>

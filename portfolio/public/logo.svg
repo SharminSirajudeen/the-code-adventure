@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange C -->
+  <path d="M256 380C198.144 380 151 332.856 151 275C151 217.144 198.144 170 256 170C281.405 170 304.882 178.765 323.5 193.5"
+        stroke="#FF6B35" stroke-width="45" stroke-linecap="round" fill="none"/>
+
+  <!-- Hammer Head (Dark Navy) -->
+  <g transform="translate(280, 100) rotate(-30)">
+    <rect x="0" y="0" width="80" height="60" rx="8" fill="#2D3748"/>
+    <rect x="-5" y="55" width="90" height="15" rx="4" fill="#1A202C"/>
+  </g>
+
+  <!-- Hammer Handle (Dark Navy) -->
+  <g transform="translate(280, 100) rotate(-30)">
+    <rect x="30" y="60" width="20" height="120" rx="10" fill="#2D3748"/>
+    <ellipse cx="40" cy="180" rx="12" ry="8" fill="#1A202C"/>
+  </g>
+
+  <!-- Sparks (Orange) -->
+  <circle cx="340" cy="145" r="8" fill="#FF6B35"/>
+  <circle cx="365" cy="160" r="6" fill="#FF6B35"/>
+  <circle cx="350" cy="125" r="5" fill="#FF8C42"/>
+</svg>
