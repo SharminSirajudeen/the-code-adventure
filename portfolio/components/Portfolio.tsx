@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Code, Layers, Zap } from 'lucide-react'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -34,7 +35,6 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="section-padding bg-white">
       <div className="container-custom">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,6 @@ export default function Portfolio() {
           </p>
         </motion.div>
 
-        {/* Projects */}
         <div className="space-y-16">
           {projects.map((project, index) => (
             <motion.div
@@ -60,16 +59,16 @@ export default function Portfolio() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="grid lg:grid-cols-2 gap-8 items-center"
             >
-              {/* Image */}
               <div className={`relative overflow-hidden rounded-2xl shadow-xl ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="aspect-[4/3] bg-navy/5">
-                  <img
+                <div className="aspect-[4/3] bg-navy/5 relative">
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                {/* Icon overlay */}
                 <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
                     <project.icon className="w-6 h-6 text-gold" />
@@ -77,7 +76,6 @@ export default function Portfolio() {
                 </div>
               </div>
 
-              {/* Content */}
               <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                 <div className="inline-block bg-gold/10 text-gold px-4 py-1 rounded-full text-sm font-medium mb-4">
                   {project.category}

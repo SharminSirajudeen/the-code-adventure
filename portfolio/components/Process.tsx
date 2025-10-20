@@ -57,7 +57,6 @@ const reassurancePoints = [
 export default function Process() {
   return (
     <section id="process" className="section-padding bg-navy text-white relative overflow-hidden">
-      {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: 'radial-gradient(circle, #D4AF37 1px, transparent 1px)',
@@ -66,7 +65,6 @@ export default function Process() {
       </div>
 
       <div className="container-custom relative z-10">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +79,6 @@ export default function Process() {
           </p>
         </motion.div>
 
-        {/* Process steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {steps.map((step, index) => (
             <motion.div
@@ -93,17 +90,14 @@ export default function Process() {
               className="relative"
             >
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 h-full">
-                {/* Number badge */}
                 <div className="absolute -top-3 -right-3 w-12 h-12 bg-gold rounded-full flex items-center justify-center font-bold text-navy">
                   {step.number}
                 </div>
 
-                {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6">
                   <step.icon className="w-7 h-7 text-gold" />
                 </div>
 
-                {/* Content */}
                 <h3 className="heading-sm mb-2">
                   {step.title}
                 </h3>
@@ -118,7 +112,6 @@ export default function Process() {
           ))}
         </div>
 
-        {/* Reassurance points */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

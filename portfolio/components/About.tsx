@@ -27,7 +27,6 @@ export default function About() {
     <section id="about" className="section-padding bg-white">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Image side */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -35,7 +34,6 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="relative">
-              {/* Placeholder for professional photo */}
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-navy to-navy/80 flex items-center justify-center overflow-hidden shadow-2xl">
                 <div className="text-center p-8">
                   <div className="w-32 h-32 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4">
@@ -48,13 +46,10 @@ export default function About() {
                   </p>
                 </div>
               </div>
-
-              {/* Decorative element */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold/20 rounded-full blur-3xl -z-10"></div>
             </div>
           </motion.div>
 
-          {/* Content side */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -89,7 +84,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Highlights */}
             <div className="grid grid-cols-2 gap-4">
               {highlights.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">

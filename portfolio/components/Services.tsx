@@ -58,7 +58,6 @@ export default function Services() {
   return (
     <section id="services" className="section-padding bg-offWhite">
       <div className="container-custom">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +72,6 @@ export default function Services() {
           </p>
         </motion.div>
 
-        {/* Services grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div

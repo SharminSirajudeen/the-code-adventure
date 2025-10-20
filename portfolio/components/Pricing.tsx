@@ -22,7 +22,6 @@ export default function Pricing() {
             </p>
           </div>
 
-          {/* Main CTA Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +47,6 @@ export default function Pricing() {
             </a>
           </motion.div>
 
-          {/* What's included */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -14,7 +14,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
     console.log('Form submitted:', formData)
     alert('Thank you for your message! I will get back to you within 24 hours.')
   }
@@ -44,7 +43,6 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +60,6 @@ export default function Contact() {
               </p>
 
               <div className="space-y-6">
-                {/* Email */}
                 <a
                   href="mailto:your.email@example.com"
                   className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
@@ -76,7 +73,6 @@ export default function Contact() {
                   </div>
                 </a>
 
-                {/* Calendar */}
                 <a
                   href="#"
                   className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
@@ -90,7 +86,6 @@ export default function Contact() {
                   </div>
                 </a>
 
-                {/* LinkedIn */}
                 <a
                   href="https://linkedin.com/in/yourprofile"
                   target="_blank"
@@ -106,7 +101,6 @@ export default function Contact() {
                   </div>
                 </a>
 
-                {/* GitHub */}
                 <a
                   href="https://github.com/yourusername"
                   target="_blank"
@@ -123,7 +117,6 @@ export default function Contact() {
                 </a>
               </div>
 
-              {/* Availability badge */}
               <div className="mt-8 pt-8 border-t border-white/10">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
@@ -135,7 +128,6 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Contact form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -143,7 +135,6 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
                   Your Name *
@@ -160,7 +151,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
                   Email Address *
@@ -177,7 +167,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Project Type */}
               <div>
                 <label htmlFor="projectType" className="block text-sm font-medium text-charcoal mb-2">
                   Project Type *
@@ -200,7 +189,6 @@ export default function Contact() {
                 </select>
               </div>
 
-              {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-2">
                   Project Details *
@@ -217,7 +205,6 @@ export default function Contact() {
                 />
               </div>
 
-              {/* Submit button */}
               <button
                 type="submit"
                 className="btn-primary w-full inline-flex items-center justify-center gap-2 group"

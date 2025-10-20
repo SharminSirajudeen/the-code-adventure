@@ -9,13 +9,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Premium Digital Solutions | Luxury Web & Mobile Development',
-  description: 'Trusted by premium brands to deliver exceptional web & mobile solutions. 50+ projects delivered with 90+ Lighthouse scores.',
-  keywords: ['luxury web development', 'premium websites', 'mobile app development', 'SEO optimization', 'custom CMS'],
-  authors: [{ name: 'Your Name' }],
+  title: 'Digital Solutions | Web & Mobile Development',
+  description: 'Professional web and mobile development services. Modern, performant applications built with Next.js, React, and TypeScript.',
+  keywords: ['web development', 'mobile apps', 'Next.js', 'React', 'SEO optimization', 'CMS'],
   openGraph: {
-    title: 'Premium Digital Solutions | Luxury Web & Mobile Development',
-    description: 'Trusted by premium brands to deliver exceptional web & mobile solutions.',
+    title: 'Digital Solutions | Web & Mobile Development',
+    description: 'Professional web and mobile development services.',
     type: 'website',
   },
 }
