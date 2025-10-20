@@ -18,27 +18,18 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, type: 'spring' }}
-            className="mb-12"
+            className="mb-8"
           >
-            <div className="relative w-64 h-64 mx-auto">
+            <div className="relative w-full max-w-4xl mx-auto" style={{ height: '280px' }}>
               <Image
-                src="/logo.svg"
-                alt="Code Foundry"
+                src="/images/logo-final.svg"
+                alt="Code Foundry - Binary Born. Human Designed."
                 fill
                 className="object-contain drop-shadow-2xl"
                 priority
               />
             </div>
           </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="heading-xl text-white mb-4"
-          >
-            Binary Born. <span className="text-gold">Human Designed.</span>
-          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

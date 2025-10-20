@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 }
 
