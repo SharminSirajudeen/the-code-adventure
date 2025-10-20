@@ -136,7 +136,7 @@ export async function POST(request: Request) {
       {
         success: true,
         message: 'Email sent successfully',
-        id: data.id
+        data: data
       },
       { status: 200 }
     );
