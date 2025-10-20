@@ -94,7 +94,7 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <a
-                  href="mailto:contact@codefoundry.com"
+                  href="mailto:sharminsirajudeen11@gmail.com"
                   className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
@@ -102,7 +102,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">Email</div>
-                    <div className="font-medium">contact@codefoundry.com</div>
+                    <div className="font-medium">sharminsirajudeen11@gmail.com</div>
                   </div>
                 </a>
 
