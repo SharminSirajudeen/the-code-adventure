@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import TrustBar from '@/components/TrustBar'
 import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
+import DesignShowcase from '@/components/DesignShowcase'
 import Process from '@/components/Process'
 import About from '@/components/About'
 import Pricing from '@/components/Pricing'
@@ -15,6 +16,7 @@ export default function Home() {
       <TrustBar />
       <Services />
       <Portfolio />
+      <DesignShowcase />
       <Process />
       <About />
       <Pricing />

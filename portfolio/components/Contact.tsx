@@ -121,7 +121,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
                   <span className="text-white/80">
-                    Accepting Q2 2025 projects • Remote & on-site
+                    Currently accepting new projects
                   </span>
                 </div>
               </div>
