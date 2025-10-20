@@ -11,11 +11,44 @@ export default function Contact() {
     projectType: '',
     message: '',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you within 24 hours.')
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          projectType: '',
+          message: '',
+        })
+        alert('✅ Thank you! Your message has been sent. I will get back to you within 24 hours.')
+      } else {
+        setSubmitStatus('error')
+        alert('❌ Failed to send message. Please try again or email directly.')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      alert('❌ Failed to send message. Please try again or email directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -178,10 +211,11 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="btn-primary w-full inline-flex items-center justify-center gap-2 group"
+                disabled={isSubmitting}
+                className="btn-primary w-full inline-flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
-                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+                <Send className={`w-5 h-5 transition-transform ${isSubmitting ? 'animate-pulse' : 'group-hover:translate-x-1'}`} />
               </button>
 
               <p className="text-sm text-charcoal/60 text-center">
