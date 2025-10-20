@@ -106,6 +106,7 @@ export default function Contact() {
                   </div>
                 </a>
 
+                {/* Schedule a Call - Commented out for later use
                 <a
                   href="#"
                   className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
@@ -118,6 +119,7 @@ export default function Contact() {
                     <div className="font-medium">Book a consultation</div>
                   </div>
                 </a>
+                */}
               </div>
 
               <div className="mt-8 pt-8 border-t border-white/10">
@@ -150,7 +152,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
-                  placeholder="John Smith"
+                  placeholder="Alan Turing"
                 />
               </div>
 
@@ -166,7 +168,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
-                  placeholder="john@company.com"
+                  placeholder="alan@company.com"
                 />
               </div>
 
