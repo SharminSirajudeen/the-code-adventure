@@ -29,8 +29,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="heading-xl text-white mb-6"
           >
-            Building Modern
-            <span className="block text-gold">Digital Solutions</span>
+            Engineering Scalable
+            <span className="block text-gold">Software Systems</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +39,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="body-lg text-white/90 mb-8 max-w-3xl mx-auto"
           >
-            Professional web and mobile development services focused on quality,
-            performance, and modern best practices
+            Full-stack development with production-grade architecture, optimized performance,
+            and maintainable codebases built on modern frameworks
           </motion.p>
 
           <motion.div

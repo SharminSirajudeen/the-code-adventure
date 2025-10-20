@@ -13,13 +13,13 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gold flex items-center justify-center font-bold text-navy">
-                D
+                S
               </div>
-              <span className="text-xl font-semibold">Digital Solutions</span>
+              <span className="text-xl font-semibold">Stack Engineering</span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
-              Professional web and mobile development services.
-              Building modern digital solutions with clean code.
+              Full-stack software engineering. Building scalable systems with
+              modern architecture patterns and clean, testable code.
             </p>
             <div className="flex gap-4">
               <a
@@ -106,10 +106,10 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
             <p>
-              © {currentYear} Premium Digital Solutions. All rights reserved.
+              © {currentYear} Stack Engineering. All rights reserved.
             </p>
             <p>
-              Based in London | Serving Clients Worldwide
+              Serving clients worldwide
             </p>
           </div>
         </div>

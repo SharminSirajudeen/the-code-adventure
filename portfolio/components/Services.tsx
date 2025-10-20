@@ -6,51 +6,51 @@ import { Globe, Database, Search, Smartphone, FileText, Zap, Eye, BarChart } fro
 const services = [
   {
     icon: Globe,
-    title: 'Website Development',
-    outcome: 'Next.js, React, TypeScript',
-    description: 'Modern, responsive websites built with latest web technologies and best practices',
+    title: 'Web Application Engineering',
+    outcome: 'Next.js App Router, React Server Components',
+    description: 'Full-stack web apps with SSR/SSG, API routes, middleware, and optimized build pipelines',
   },
   {
     icon: Database,
-    title: 'Content Management Systems',
-    outcome: 'Custom CMS or Headless Solutions',
-    description: 'User-friendly admin panels with visual editing capabilities for easy content updates',
+    title: 'Backend Systems & APIs',
+    outcome: 'RESTful APIs, GraphQL, Database Architecture',
+    description: 'Scalable backend services with proper ORM integration, query optimization, and caching layers',
   },
   {
     icon: Search,
-    title: 'SEO & Performance',
-    outcome: 'Technical SEO, Meta Tags, Sitemaps',
-    description: 'Search engine optimization focused on page speed, schema markup, and Core Web Vitals',
+    title: 'Performance Engineering',
+    outcome: 'Lighthouse 90+, Core Web Vitals, Bundle Analysis',
+    description: 'Runtime optimization through code splitting, lazy loading, tree shaking, and edge caching',
   },
   {
     icon: Smartphone,
-    title: 'Mobile App Development',
-    outcome: 'Native iOS (SwiftUI) & Android (Compose)',
-    description: 'High-performance native mobile applications with platform-specific best practices',
+    title: 'Native Mobile Development',
+    outcome: 'SwiftUI (iOS), Jetpack Compose (Android)',
+    description: 'Platform-native apps with proper state management, navigation, and async data handling',
   },
   {
     icon: FileText,
-    title: 'Blog & Content Platforms',
-    outcome: 'Markdown, Rich Text, Categories',
-    description: 'Publishing systems with advanced features like tagging, search, and content scheduling',
+    title: 'CMS Architecture',
+    outcome: 'Headless CMS, Custom Admin Panels',
+    description: 'Content systems with WYSIWYG editors, versioning, role-based access, and API integrations',
   },
   {
     icon: Zap,
-    title: 'Performance Optimization',
-    outcome: 'Lighthouse 90+, Sub-2s Load Times',
-    description: 'Code splitting, lazy loading, image optimization, and caching strategies',
+    title: 'CI/CD & DevOps',
+    outcome: 'GitHub Actions, Docker, Cloud Deployment',
+    description: 'Automated testing, build pipelines, containerization, and infrastructure as code',
   },
   {
     icon: Eye,
-    title: 'Accessibility Compliance',
-    outcome: 'WCAG 2.1 AA Standards',
-    description: 'Semantic HTML, keyboard navigation, screen reader support, and color contrast testing',
+    title: 'Testing & Quality Assurance',
+    outcome: 'Unit, Integration, E2E Testing',
+    description: 'Comprehensive test coverage with Jest, Testing Library, Playwright, and performance benchmarks',
   },
   {
     icon: BarChart,
-    title: 'Analytics & Tracking',
-    outcome: 'Google Analytics, Tag Manager',
-    description: 'Implementation and configuration of analytics tools for data-driven insights',
+    title: 'Analytics Implementation',
+    outcome: 'GA4, Custom Events, Data Layer',
+    description: 'Event tracking architecture with proper data modeling and analytics configuration',
   },
 ]
 
@@ -65,10 +65,10 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="heading-lg text-navy mb-4">
-            Services
+            Technical Capabilities
           </h2>
           <p className="body-lg text-charcoal/70 max-w-2xl mx-auto">
-            Full-stack development services using modern technologies and industry best practices
+            End-to-end engineering services from system design to production deployment
           </p>
         </motion.div>
 

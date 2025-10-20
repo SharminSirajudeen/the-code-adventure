@@ -35,10 +35,10 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="heading-lg text-navy mb-4">
-            Ready to Elevate Your Digital Presence?
+            Let's Build Something
           </h2>
           <p className="body-lg text-charcoal/70 max-w-2xl mx-auto">
-            Let's discuss how we can transform your digital vision into reality
+            Discuss your technical requirements and project architecture
           </p>
         </motion.div>
 
@@ -51,12 +51,12 @@ export default function Contact() {
           >
             <div className="bg-navy text-white rounded-2xl p-8 h-full">
               <h3 className="heading-sm mb-6">
-                Let's Connect
+                Get in Touch
               </h3>
 
               <p className="text-white/80 mb-8 leading-relaxed">
-                I respond to all inquiries within 24 hours. For immediate consultation
-                scheduling, use the calendar link below.
+                24-hour response time. Available for technical consultations
+                and project scoping sessions.
               </p>
 
               <div className="space-y-6">
@@ -121,7 +121,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
                   <span className="text-white/80">
-                    Currently accepting new projects for Q2 2025
+                    Accepting Q2 2025 projects • Remote & on-site
                   </span>
                 </div>
               </div>
@@ -179,13 +179,14 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all"
                 >
-                  <option value="">Select a project type</option>
-                  <option value="website">Website Development</option>
-                  <option value="cms">Content Management System</option>
-                  <option value="seo">SEO Optimization</option>
-                  <option value="mobile">Mobile App Development</option>
-                  <option value="performance">Performance Optimization</option>
-                  <option value="other">Other</option>
+                  <option value="">Select project type</option>
+                  <option value="web-app">Web Application (Full-Stack)</option>
+                  <option value="api">Backend API & Database</option>
+                  <option value="mobile">Native Mobile App (iOS/Android)</option>
+                  <option value="cms">CMS / Admin Panel</option>
+                  <option value="optimization">Performance Optimization</option>
+                  <option value="migration">Tech Stack Migration</option>
+                  <option value="other">Other Technical Project</option>
                 </select>
               </div>
 
@@ -201,7 +202,7 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={5}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all resize-none"
-                  placeholder="Tell me about your project, goals, and timeline..."
+                  placeholder="Technical requirements, stack preferences, timeline, scale expectations..."
                 />
               </div>
 
@@ -214,7 +215,7 @@ export default function Contact() {
               </button>
 
               <p className="text-sm text-charcoal/60 text-center">
-                I typically respond within 24 hours
+                Response within 24 hours with technical assessment
               </p>
             </form>
           </motion.div>
