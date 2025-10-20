@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Github, Calendar, Send } from 'lucide-react'
+import { Mail, Calendar, Send } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -83,36 +83,6 @@ export default function Contact() {
                   <div>
                     <div className="text-sm text-white/60">Schedule a Call</div>
                     <div className="font-medium">Book a consultation</div>
-                  </div>
-                </a>
-
-                <a
-                  href="https://linkedin.com/in/yourprofile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
-                >
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
-                    <Linkedin className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-white/60">LinkedIn</div>
-                    <div className="font-medium">Connect professionally</div>
-                  </div>
-                </a>
-
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-white/90 hover:text-gold transition-colors group"
-                >
-                  <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
-                    <Github className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-sm text-white/60">GitHub</div>
-                    <div className="font-medium">View my code</div>
                   </div>
                 </a>
               </div>
